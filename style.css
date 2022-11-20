@@ -96,10 +96,6 @@ img{
     transform: translateY(0);
 }
 
-.card .content p {
-    margin: 0;
-}
-
 .card .content .title {
     font-size: 20px;
     font-weight: 600;
