@@ -1,46 +1,371 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: Segoe UI;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+body {
+    margin: 0;
+    color: #FFF;
     background-image: url(/imagens/17819951_SL-013020-27540-31.jpg);
     background-size: cover;
-    text-align: center;
-    color: #434343;
 }
 
-main.cards{
+.container {
+    width: 100%;
+    height: 50vh;
     display: flex;
-    padding: 32px;
-
+    align-items: center;
+    justify-content: center;
 }
 
-main.cards section.card{
+img{
+    width: 200px;
+}
+
+.card {
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 300px;
+    max-height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
-    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
     background-color: aliceblue;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    border: solid 2px rgba(255, 255, 255, 0.226);
-    margin-left: 64px;
+    transition: all .5s;
+    margin-left: 20px;
 }
 
-main.cards section.card:first-child{
-    margin-left: 0;
+.card:first-child {
+    margin-left: 0px;
 }
 
-main.cards section.card .icon{
-    width: 128px;
-    height: 128px;
+.card:hover {
+    background-image: linear-gradient(#672abf, #380e74);
 }
 
-main.cards section.card img{
-    width: 100%;
+.card .img {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-image: url('./assets/Evelynn.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: all .5s;
+    z-index: 2;
+    position: relative;
+    opacity: .8;
 }
+
+.card .img span {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 100;
+    font-style: italic;
+    transition: all .5s;
+}
+
+.card:hover .img {
+    width: 430px;
+    opacity: 1;
+}
+
+.card:hover .img span {
+    font-size: 28px;
+}
+
+.card .content {
+    padding: 0px 20px;
+    height: 0;
+    opacity: 0;
+    transition: all .5s;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translateY(30px);
+}
+
+.card:hover .content {
+    height: 260px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content p {
+    margin: 0;
+}
+
+.card .content .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .content .desc {
+    font-size: 14px;
+    font-weight: 100;
+    opacity: .8;
+    margin-top: 8px;
+}
+
+.card .arrow {
+    padding: 15px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow {
+    transform: rotate(0);
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+button {
+    margin-bottom: 8px;
+    width: 120px;
+    flex-wrap: wrap;
+    max-width: 150px;
+    padding: 2px 12px;
+    background-color: #514869;
+    color: white;
+    cursor: pointer;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bolder;
+    transition: .5s;
+    border: 1px solid #333;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+button:hover {
+    color: #333;
+    background: white;
+}
+
+.bt1.active{
+    background: #41B883;
+}
+.bt2.active{
+    background: #41B883;
+}
+.bt3.active{
+    background: #41B883;
+}
+.bt4.active{
+    background: #41B883;
+}
+.bt5.active{
+    background: #41B883;
+}
+.bt6.active{
+    background: #41B883;
+}
+.bt7.active{
+    background: #41B883;
+}
+.bt8.active{
+    background: #41B883;
+}
+.bt9.active{
+    background: #41B883;
+}
+.bt10.active{
+    background: #41B883;
+}
+.bt11.active{
+    background: #41B883;
+}
+.bt12.active{
+    background: #41B883;
+}
+.bt13.active{
+    background: #41B883;
+}
+.bt14.active{
+    background: #41B883;
+}
+.bt15.active{
+    background: #41B883;
+}
+.bt16.active{
+    background: #41B883;
+}
+.bt17.active{
+    background: #41B883;
+}
+.bt18.active{
+    background: #41B883;
+}
+.bt19.active{
+    background: #41B883;
+}
+.bt20.active{
+    background: #41B883;
+}
+.bt21.active{
+    background: #41B883;
+}
+.bt22.active{
+    background: #41B883;
+}
+.bt23.active{
+    background: #41B883;
+}
+.bt24.active{
+    background: #41B883;
+}
+.bt25.active{
+    background: #41B883;
+}
+.bt26.active{
+    background: #41B883;
+}
+.bt27.active{
+    background: #41B883;
+}
+.bt28.active{
+    background: #41B883;
+}
+.bt29.active{
+    background: #41B883;
+}
+.bt30.active{
+    background: #41B883;
+}
+.bt31.active{
+    background: #41B883;
+}
+.bt32.active{
+    background: #41B883;
+}
+.bt33.active{
+    background: #41B883;
+}
+.bt34.active{
+    background: #41B883;
+}
+.bt35.active{
+    background: #41B883;
+}
+.bt36.active{
+    background: #41B883;
+}
+.bt37.active{
+    background: #41B883;
+}
+.bt38.active{
+    background: #41B883;
+}
+.bt39.active{
+    background: #41B883;
+}
+.bt40.active{
+    background: #41B883;
+}
+.bt41.active{
+    background: #41B883;
+}
+.bt42.active{
+    background: #41B883;
+}
+.bt43.active{
+    background: #41B883;
+}
+.bt44.active{
+    background: #41B883;
+}
+.bt45.active{
+    background: #41B883;
+}
+.bt46.active{
+    background: #41B883;
+}
+.bt47.active{
+    background: #41B883;
+}
+.bt48.active{
+    background: #41B883;
+}
+.bt49.active{
+    background: #41B883;
+}
+.bt50.active{
+    background: #41B883;
+}
+.bt51.active{
+    background: #41B883;
+}
+.bt52.active{
+    background: #41B883;
+}
+.bt53.active{
+    background: #41B883;
+}
+.bt54.active{
+    background: #41B883;
+}
+.bt55.active{
+    background: #41B883;
+}
+.bt56.active{
+    background: #41B883;
+}
+.bt57.active{
+    background: #41B883;
+}
+
+.bt58.active{
+    background: #41B883;
+}
+.bt59.active{
+    background: #41B883;
+}
+.bt60.active{
+    background: #41B883;
+}
+.bt61.active{
+    background: #41B883;
+}
+.bt62.active{
+    background: #41B883;
+}
+.bt63.active{
+    background: #41B883;
+}
+.bt64.active{
+    background: #41B883;
+}
+.bt65.active{
+    background: #41B883;
+}
+.bt66.active{
+    background: #41B883;
+}
+.bt67.active{
+    background: #41B883;
+}
+.bt68.active{
+    background: #41B883;
+}
+.bt69.active{
+    background: #41B883;
+}
+.bt70.active{
+    background: #41B883;
+}
+.bt70.active{
+    background: #41B883;
+}
+.bt70.active{
+    background: #41B883;
+}
+.bt70.active{
+    background: #41B883;
+}
+
