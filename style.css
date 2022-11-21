@@ -127,7 +127,7 @@ button {
     width: 120px;
     flex-wrap: wrap;
     max-width: 150px;
-    padding: 4px 12px;
+    padding: 4.5px 12px;
     background-color: #ffa600;
     color: white;
     cursor: pointer;
