@@ -150,11 +150,11 @@ button:hover {
     }
     .card {
         width: 300px;
-        max-height: 350px;
+        max-height: 380px;
         margin-left: 15px;
     }
     button {
-        height: 20px;
+        height: 25px;
         font-size: 10px;
         width: 120px;
     }
